@@ -1,0 +1,86 @@
+[
+  {
+      "tipo": "Rostro",
+      "tamaño": "A5",
+      "costo": 20,
+      "color": "A elección del cliente",
+      "tiempoDeDesarrollo": "1 día"
+  },
+  {
+      "tipo": "Medio cuerpo",
+      "tamaño": "A4",
+      "costo": 35,
+      "color": "Full color",
+      "tiempoDeDesarrollo": "2 días"
+  },
+  {
+      "tipo": "Cuerpo entero",
+      "tamaño": "A3",
+      "costo": 50,
+      "color": "Full color",
+      "tiempoDeDesarrollo": "3 días"
+  },
+  {
+      "tipo": "Chibi",
+      "tamaño": "800x800",
+      "costo": 25,
+      "color": "Colores pastel",
+      "tiempoDeDesarrollo": "1 día"
+  },
+  {
+      "tipo": "Con fondo detallado",
+      "tamaño": "A3",
+      "costo": 70,
+      "color": "Full color",
+      "tiempoDeDesarrollo": "4 días"
+  },
+  {
+      "tipo": "Fanart",
+      "tamaño": "A4",
+      "costo": 40,
+      "color": "Estilo anime",
+      "tiempoDeDesarrollo": "2 días"
+  },
+  {
+      "tipo": "Sticker pack (3 dibujos)",
+      "tamaño": "500x500 c/u",
+      "costo": 30,
+      "color": "Fondo transparente",
+      "tiempoDeDesarrollo": "2 días"
+  },
+  {
+      "tipo": "Ilustración de mascota",
+      "tamaño": "A4",
+      "costo": 45,
+      "color": "Realista o cartoon",
+      "tiempoDeDesarrollo": "2-3 días"
+  },
+  {
+      "tipo": "Pixel Art",
+      "tamaño": "64x64",
+      "costo": 15,
+      "color": "Limitado (paleta pixel)",
+      "tiempoDeDesarrollo": "4 horas"
+  },
+  {
+      "tipo": "Retrato realista",
+      "tamaño": "A3",
+      "costo": 90,
+      "color": "Blanco y negro o color",
+      "tiempoDeDesarrollo": "5 días"
+  },
+  {
+      "tipo": "Ilustración digital personalizada",
+      "tamaño": "A2",
+      "costo": 100,
+      "color": "A elección del cliente",
+      "tiempoDeDesarrollo": "7 días"
+  },
+  {
+      "tipo": "Caricatura divertida",
+      "tamaño": "A5",
+      "costo": 30,
+      "color": "Colores vibrantes",
+      "tiempoDeDesarrollo": "2 días"
+  }
+]

@@ -8,21 +8,26 @@ function agregarAlCarrito(nombre, tamaño, precio) {
     mostrarCarrito();
 }
 
-// Función para mostrar los productos en la grilla
+// Función para mostrar los productos en la grilla 
 function mostrarProductos(productos) {
     const container = document.getElementById("productos-container");
 
-    productos.forEach((producto) => {
+    productos.forEach((producto, index) => {
         const productoDiv = document.createElement("div");
         productoDiv.classList.add("producto");
 
         productoDiv.innerHTML = `
-            <h3>${producto.tipo}</h3>
-            <p>Tamaño: ${producto.tamaño}</p>
-            <p>Color: ${producto.color}</p>
-            <p>Tiempo de desarrollo: ${producto.tiempoDeDesarrollo}</p>
-            <p>Precio: $${producto.costo}</p>
-            <button class="agregar-carrito-btn" data-nombre="${producto.tipo}" data-tamaño="${producto.tamaño}" data-precio="${producto.costo}">Seleccionar</button>
+            <div class="producto-datos">
+                <h3>${producto.tipo}</h3>
+                <p>Tamaño: ${producto.tamaño}</p>
+                <p>Color: ${producto.color}</p>
+                <p>Tiempo de desarrollo: ${producto.tiempoDeDesarrollo}</p>
+                <p>Precio: $${producto.costo}</p>
+                <button class="agregar-carrito-btn" data-nombre="${producto.tipo}" data-tamaño="${producto.tamaño}" data-precio="${producto.costo}">Seleccionar</button>
+            </div>
+            <div class="producto-imagen">
+                <img src="${producto.imagen}" alt="${producto.tipo}" />
+            </div>
         `;
 
         container.appendChild(productoDiv);
@@ -56,6 +61,20 @@ document.getElementById("vaciar-carrito-btn").addEventListener("click", () => {
     localStorage.removeItem("carrito");
     mostrarCarrito();
 });
+
+// Evento para comprar
+const botonComprar = document.getElementById("comprar-carrito-btn");
+
+botonComprar.addEventListener("click", function() {
+   
+    localStorage.removeItem("carrito");
+    
+    alert("Gracias por su compra, nos pondremos en contacto con usted.");
+      
+    mostrarCarrito();
+});
+
+
 
 // Verificar el tema guardado en localStorage al cargar la página
 let currentTheme = localStorage.getItem("theme");

@@ -3,7 +3,44 @@
     bottom: 10px;
     right: 10px;
     font-size: 16px;
-    z-index: 1000; 
+    z-index: 1000;
+    background-color: #e0f7fa; 
+    padding: 8px 12px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.logo-container {
+    position: absolute;  
+    top: 20px;  
+    left: 20px;  
+    z-index: 1000;  
+}
+
+.logo {
+    width: 150px; 
+    height: 150px;  
+    border-radius: 50%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    object-fit: cover;  
+}
+
+/* Boton modo nocturno */
+
+#toggle-theme-btn {
+    width: 140px;  
+    height: auto; 
+    cursor: pointer;  
+    
+    position: absolute;  
+    top: 55px;  
+    right: 20px;  
+    z-index: 1000;
+    
+}
+
+#toggle-theme-btn:hover {
+    transform: scale(1.1);  
 }
 
 body {
@@ -12,10 +49,13 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif; 
 }
 
 h1 {
+    font-family: 'Patrick Hand', sans-serif;
     margin-top: 20px;
+    font-size: 48px;
     background-color: white;
     padding: 10px;
     border: 2px solid #ccc;
@@ -30,11 +70,32 @@ h1 {
     margin: 20px;
     padding: 20px;
 }
+
+/* --- OBJETOS DE LA GRILLA --- */
 .producto {
-    background-color: white;
+    background-color: #e0f7fa; 
     padding: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+    border-radius: 8px; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
     text-align: center;
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+    padding: 15px;
+    border: 1px solid #ddd; 
+    background-color: #fff; 
+    margin-bottom: 20px;  
+}
+
+.producto-datos {
+    flex: 1;  
+    padding-right: 20px;  
+}
+
+.producto-imagen img {
+    width: 300px;  
+    height: auto; 
+    object-fit: cover;  
 }
 
 .producto h3 {
@@ -46,13 +107,6 @@ h1 {
     margin: 5px 0;
     font-size: 14px;
 }
-
-#toggle-theme-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    }
 
 #carrito-container {
     margin-top: 40px;
@@ -66,10 +120,31 @@ h1 {
 }
 
 #vaciar-carrito-btn {
-    margin-top: 20px;
     padding: 10px 20px;
-    background-color: #e74c3c;
+    background-color: #af544c;  
     color: white;
     border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+#vaciar-carrito-btn:hover {
+    background-color: #9e2015;    
+}
+
+#comprar-carrito-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#comprar-carrito-btn:hover {
+    background-color: #45a049;  
+}

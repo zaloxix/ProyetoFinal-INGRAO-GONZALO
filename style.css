@@ -1,8 +1,9 @@
 .footerCopyright {
-    position: absolute;
+    position: fixed;
     bottom: 10px;
     right: 10px;
     font-size: 16px;
+    z-index: 1000; 
 }
 
 body {

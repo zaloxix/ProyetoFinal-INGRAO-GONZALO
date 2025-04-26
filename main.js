@@ -29,7 +29,7 @@ function mostrarProductos(productos) {
     });
 }
 
-// Función para mostrar los productos en el carrito
+// Funcion para mostrar los productos en el carrito
 function mostrarCarrito() {
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     const carritoLista = document.getElementById("carrito-lista");
@@ -66,7 +66,7 @@ if (currentTheme === "oscuro") {
     document.body.style.backgroundColor = "#f0f0f0";
 }
 
-// Evento para cambiar el tema al hacer clic en el botón
+// Evento para cambiar el tema al hacer clic en el boton
 const toggleThemeBtn = document.getElementById("toggle-theme-btn");
 toggleThemeBtn.addEventListener("click", () => {
     let currentTheme = localStorage.getItem("theme");
@@ -80,7 +80,7 @@ toggleThemeBtn.addEventListener("click", () => {
     }
 });
 
-// 🚀 Traer productos desde catalogo.json
+// Traer productos desde catalogo.json
 fetch('./catalogo.json')
     .then(res => res.json())
     .then(productos => {
